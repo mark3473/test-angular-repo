@@ -43,7 +43,7 @@ describe('CalculatorComponent', () => {
 
     component.calculatorForm.get('firstInput').setValue(String(10));
     component.calculatorForm.get('secondInput').setValue(String(2));
-    component.calculatorForm.get('operator').setValue('-');
+    component.calculatorForm.get('operator').setValue('+');
     component.onSubmit();
 
     expect(component.result).toBe(8);
